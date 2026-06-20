@@ -1,0 +1,185 @@
+[
+    {
+        "query": "What is astronomy?",
+        "attempts": [
+            {
+                "attempt_no": 1,
+                "query": "What is astronomy?",
+                "answer": "There is no information about astronomy in the provided context. The context only discusses Machine Learning and its fundamentals.",
+                "retrieval_score": 0,
+                "hallucination_status": "SUPPORTED",
+                "quality_score": 4,
+                "verdict": "INSUFFICIENT_CONTEXT",
+                "primary_root_cause": "RETRIEVAL_FAILURE",
+                "recommended_action": "TERMINATED"
+            }
+        ],
+        "final_answer": "There is no information about astronomy in the provided context. The context only discusses Machine Learning and its fundamentals.",
+        "final_verdict": "INSUFFICIENT_CONTEXT",
+        "total_attempts": 1,
+        "total_repairs": 0
+    },
+    {
+        "query": "What is Machine Learning ?",
+        "attempts": [
+            {
+                "attempt_no": 1,
+                "query": "What is Machine Learning ?",
+                "answer": "Demo answer for: What is Machine Learning ?",
+                "retrieval_score": 7,
+                "hallucination_status": "SUPPORTED",
+                "hallucination_confidence": 0.85,
+                "quality_score": 6,
+                "verdict": "FAIL",
+                "primary_root_cause": "LOW_ANSWER_QUALITY",
+                "recommended_action": "EXPAND_AND_REWRITE"
+            },
+            {
+                "attempt_no": 2,
+                "query": "What is Machine Learning ?",
+                "answer": "Demo answer for: What is Machine Learning ? [expanded with more detail and examples]",
+                "retrieval_score": 7,
+                "hallucination_status": "SUPPORTED",
+                "hallucination_confidence": 0.85,
+                "quality_score": 6,
+                "verdict": "PASS",
+                "primary_root_cause": "LOW_ANSWER_QUALITY",
+                "recommended_action": "EXPAND_AND_REWRITE"
+            }
+        ],
+        "final_answer": "Demo answer for: What is Machine Learning ? [expanded with more detail and examples]",
+        "final_verdict": "PASS",
+        "total_attempts": 2,
+        "total_repairs": 1
+    },
+    {
+        "query": "What is astronomy?",
+        "attempts": [
+            {
+                "attempt_no": 1,
+                "query": "What is astronomy?",
+                "answer": "There is no information about astronomy in the provided context. The context only discusses Machine Learning and its fundamentals.",
+                "retrieval_score": 0,
+                "hallucination_status": "SUPPORTED",
+                "quality_score": 4,
+                "verdict": "INSUFFICIENT_CONTEXT",
+                "primary_root_cause": "RETRIEVAL_FAILURE",
+                "recommended_action": "TERMINATED"
+            }
+        ],
+        "final_answer": "There is no information about astronomy in the provided context. The context only discusses Machine Learning and its fundamentals.",
+        "final_verdict": "INSUFFICIENT_CONTEXT",
+        "total_attempts": 1,
+        "total_repairs": 0
+    },
+    {
+        "query": "What is deep learning ?",
+        "attempts": [
+            {
+                "attempt_no": 1,
+                "query": "What is deep learning ?",
+                "answer": "Deep Learning is a subset of machine learning that uses multi-layer neural networks.",
+                "retrieval_score": 9,
+                "hallucination_status": "SUPPORTED",
+                "hallucination_confidence": 1.0,
+                "quality_score": 6,
+                "verdict": "FAIL",
+                "primary_root_cause": "LOW_ANSWER_QUALITY",
+                "recommended_action": "EXPAND_AND_REWRITE"
+            },
+            {
+                "attempt_no": 2,
+                "query": "What is deep learning ?",
+                "answer": "**Introduction to Deep Learning**\n=====================================\n\nDeep learning is a subset of machine learning that utilizes multi-layer neural networks to analyze and interpret complex data. Inspired by the structure and function of biological neurons, these neural networks consist of interconnected computational units, or artificial neurons, that process and transmit information.\n\n**Neural Network Architecture**\n-----------------------------\n\nA neural network is composed of multiple layers, each containing a large number of artificial neurons. Each neuron receives one or more inputs, computes a weighted sum of these inputs, and applies an activation function to produce an output. The activation function introduces non-linearity to the model, enabling it to learn and represent complex relationships between inputs and outputs. Common activation functions used in deep learning include:\n\n* **ReLU (Rectified Linear Unit)**: a widely used activation function that outputs 0 for negative inputs and the input value for positive inputs.\n* **Sigmoid**: a logistic function that maps inputs to a probability between 0 and 1.\n* **Tanh (Hyperbolic Tangent)**: similar to the sigmoid function, but outputs values between -1 and 1.\n* **GELU (Gaussian Error Linear Unit)**: a probabilistic activation function that combines the benefits of ReLU and sigmoid.\n* **Swish**: a self-gated activation function that has been shown to outperform ReLU in some cases.\n\n**Training Neural Networks**\n---------------------------\n\nThe process of training a neural network involves adjusting the model parameters to minimize the difference between predicted and actual outputs. This is achieved through two primary mechanisms:\n\n1. **Forward Propagation**: the process of passing input data through the network to produce predictions.\n2. **Backpropagation**: the process of computing the error between predicted and actual outputs and adjusting the model parameters to minimize this error.\n\n**Optimization Algorithms**\n---------------------------\n\nTo update model parameters during training, various optimization algorithms are used, including:\n\n* **SGD (Stochastic Gradient Descent)**: a basic optimization algorithm that updates parameters based on the gradient of the loss function.\n* **Adam**: a popular optimization algorithm that adapts the learning rate for each parameter based on the magnitude of the gradient.\n* **AdamW**: a variant of Adam that decouples weight decay from the learning rate.\n* **RMSProp**: an optimization algorithm that divides the learning rate by an exponentially decaying average of squared gradients.\n* **Adagrad**: an optimization algorithm that adapts the learning rate for each parameter based on the magnitude of the gradient.\n\n**Applications of Deep Learning**\n---------------------------------\n\nDeep learning has revolutionized a wide range of fields, including:\n\n* **Computer Vision**: image classification, object detection, segmentation, and generation.\n* **Natural Language Processing**: text classification, language modeling, machine translation, and sentiment analysis.\n* **Speech Recognition**: speech-to-text systems that can recognize and transcribe spoken language.\n* **Medical Imaging**: image analysis and diagnosis in medical imaging applications, such as MRI and CT scans.\n* **Robotics**: control and navigation of robots using deep learning-based perception and decision-making systems.\n* **Recommendation Systems**: personalized recommendation systems that suggest products or services based on user behavior and preferences.\n* **Generative AI**: generation of new data samples, such as images, music, or text, using deep learning-based generative models.\n\n**Modern Deep Learning Models**\n------------------------------\n\nModern deep learning models often contain millions or billions of parameters, which are adjusted during training to minimize the loss function. The complexity and scale of these models have enabled state-of-the-art performance in various applications, but also pose significant challenges in terms of computational resources, training time, and interpretability.\n\nIn conclusion, deep learning is a powerful subset of machine learning that has transformed numerous fields and applications. Its ability to learn complex patterns and relationships in data has made it a crucial tool for many industries and research areas. By understanding the fundamentals of neural networks, training mechanisms, and optimization algorithms, developers and researchers can harness the power of deep learning to build innovative and effective solutions.",
+                "retrieval_score": 9,
+                "hallucination_status": "HALLUCINATED",
+                "hallucination_confidence": 0.6,
+                "quality_score": 9,
+                "verdict": "FAIL",
+                "primary_root_cause": "GENERATION_HALLUCINATION",
+                "recommended_action": "REGENERATE_WITH_CONTEXT_CONSTRAINTS"
+            },
+            {
+                "attempt_no": 3,
+                "query": "What is deep learning ?",
+                "answer": "Deep Learning is a subset of machine learning that uses multi-layer neural networks. Neural networks are inspired by biological neurons and consist of interconnected computational units. Each neuron computes a weighted sum of inputs and applies an activation function. Common activation functions include ReLU, Sigmoid, Tanh, GELU, and Swish. Training occurs through forward propagation and backpropagation. \n\nDeep learning has transformed computer vision, natural language processing, speech recognition, medical imaging, robotics, recommendation systems, and generative AI. Modern models often contain millions or billions of parameters.",
+                "retrieval_score": 9,
+                "hallucination_status": "SUPPORTED",
+                "hallucination_confidence": 0.9,
+                "quality_score": 8,
+                "verdict": "PASS",
+                "primary_root_cause": "GENERATION_HALLUCINATION",
+                "recommended_action": "REGENERATE_WITH_CONTEXT_CONSTRAINTS"
+            }
+        ],
+        "final_answer": "Deep Learning is a subset of machine learning that uses multi-layer neural networks. Neural networks are inspired by biological neurons and consist of interconnected computational units. Each neuron computes a weighted sum of inputs and applies an activation function. Common activation functions include ReLU, Sigmoid, Tanh, GELU, and Swish. Training occurs through forward propagation and backpropagation. \n\nDeep learning has transformed computer vision, natural language processing, speech recognition, medical imaging, robotics, recommendation systems, and generative AI. Modern models often contain millions or billions of parameters.",
+        "final_verdict": "PASS",
+        "total_attempts": 3,
+        "total_repairs": 2
+    },
+    {
+        "query": "What is Artificial intelligence",
+        "attempts": [
+            {
+                "attempt_no": 1,
+                "query": "What is Artificial intelligence",
+                "answer": "Artificial Intelligence is a branch that enables computers to learn patterns from data, and Machine Learning is a part of it.",
+                "retrieval_score": 8,
+                "hallucination_status": "SUPPORTED",
+                "hallucination_confidence": 0.8,
+                "quality_score": 6,
+                "verdict": "FAIL",
+                "primary_root_cause": "LOW_ANSWER_QUALITY",
+                "recommended_action": "EXPAND_AND_REWRITE"
+            },
+            {
+                "attempt_no": 2,
+                "query": "What is Artificial intelligence",
+                "answer": "**Artificial Intelligence: A Comprehensive Overview**\n\nArtificial Intelligence (AI) is a multifaceted field that encompasses a broad range of disciplines, including computer science, mathematics, and engineering. At its core, AI is designed to enable computers to perform tasks that typically require human intelligence, such as learning, problem-solving, decision-making, and perception. The primary objective of AI is to create systems that can think, learn, and act like humans, thereby augmenting human capabilities and improving overall efficiency.\n\n**Machine Learning: A Subset of Artificial Intelligence**\n\nMachine Learning (ML) is a branch of AI that focuses on developing algorithms and statistical models that enable computers to learn patterns from data without being explicitly programmed. ML is a key subset of AI, as it provides computers with the ability to learn from experience and improve their performance over time. The primary goal of ML is to build systems capable of generalizing from historical observations to unseen situations, allowing them to make predictions, classify objects, and generate insights.\n\n**Deep Learning: A Subset of Machine Learning**\n\nDeep Learning (DL) is a subset of ML that uses multi-layer neural networks to analyze data. Inspired by biological neurons, neural networks consist of interconnected computational units that compute outputs based on inputs. DL has revolutionized various fields, including computer vision, natural language processing, speech recognition, medical imaging, robotics, recommendation systems, and generative AI. Modern DL models often contain millions or billions of parameters, which are updated using optimization algorithms such as Stochastic Gradient Descent (SGD), Adam, AdamW, RMSProp, and Adagrad.\n\n**Key Concepts and Applications**\n\nTo understand AI, ML, and DL, it's essential to grasp the following key concepts:\n\n1. **Data**: The foundation of AI, ML, and DL is data. High-quality data is necessary to train models, make predictions, and improve performance.\n2. **Algorithms**: Algorithms are the set of instructions that enable computers to learn from data. ML and DL algorithms are designed to optimize model parameters and improve performance.\n3. **Model parameters**: Model parameters are the variables that define the behavior of a ML or DL model. These parameters are updated during the training process to minimize errors and improve performance.\n4. **Neural networks**: Neural networks are the building blocks of DL. They consist of interconnected computational units that compute outputs based on inputs.\n\nAI, ML, and DL have numerous applications across various industries, including:\n\n1. **Computer vision**: Image recognition, object detection, and image segmentation.\n2. **Natural language processing**: Text classification, sentiment analysis, and language translation.\n3. **Speech recognition**: Speech-to-text systems and voice assistants.\n4. **Medical imaging**: Image analysis and diagnosis.\n5. **Robotics**: Control and navigation systems.\n6. **Recommendation systems**: Personalized product recommendations.\n7. **Generative AI**: Generating new content, such as images, music, and text.\n\n**Conclusion**\n\nIn conclusion, Artificial Intelligence is a vast and multidisciplinary field that encompasses Machine Learning and Deep Learning. While AI is a broad term that refers to the development of computer systems that can perform tasks that typically require human intelligence, ML and DL are specific subsets of AI that focus on developing algorithms and statistical models to enable computers to learn from data. By understanding the key concepts and applications of AI, ML, and DL, we can unlock the full potential of these technologies and create innovative solutions that transform industries and improve our lives.",
+                "retrieval_score": 8,
+                "hallucination_status": "HALLUCINATED",
+                "hallucination_confidence": 0.2,
+                "quality_score": 9,
+                "verdict": "FAIL",
+                "primary_root_cause": "GENERATION_HALLUCINATION",
+                "recommended_action": "REGENERATE_WITH_CONTEXT_CONSTRAINTS"
+            },
+            {
+                "attempt_no": 3,
+                "query": "What is Artificial intelligence",
+                "answer": "The provided context does not contain a direct definition of Artificial Intelligence. However, it is mentioned that \"Machine Learning is a branch of Artificial Intelligence that enables computers to learn patterns from data without being explicitly programmed.\" This implies that Artificial Intelligence is a broader field that encompasses Machine Learning, but a complete definition is not provided in the context.",
+                "retrieval_score": 8,
+                "hallucination_status": "HALLUCINATED",
+                "hallucination_confidence": 0.6,
+                "quality_score": 6,
+                "verdict": "FAIL",
+                "primary_root_cause": "GENERATION_HALLUCINATION",
+                "recommended_action": "REGENERATE_WITH_CONTEXT_CONSTRAINTS"
+            }
+        ],
+        "final_answer": "The provided context does not contain a direct definition of Artificial Intelligence. However, it is mentioned that \"Machine Learning is a branch of Artificial Intelligence that enables computers to learn patterns from data without being explicitly programmed.\" This is the only information available about Artificial Intelligence in the context, and it implies that Artificial Intelligence is a field that includes Machine Learning, but a complete definition is not provided.",
+        "final_verdict": "FAIL",
+        "total_attempts": 3,
+        "total_repairs": 3
+    },
+    {
+        "query": "What is astronomy?",
+        "attempts": [
+            {
+                "attempt_no": 1,
+                "query": "What is astronomy?",
+                "answer": "There is no information about astronomy in the provided context. The context only discusses Machine Learning and its fundamentals.",
+                "retrieval_score": 0,
+                "hallucination_status": "SUPPORTED",
+                "quality_score": 4,
+                "verdict": "INSUFFICIENT_CONTEXT",
+                "primary_root_cause": "RETRIEVAL_FAILURE",
+                "recommended_action": "TERMINATED"
+            }
+        ],
+        "final_answer": "There is no information about astronomy in the provided context. The context only discusses Machine Learning and its fundamentals.",
+        "final_verdict": "INSUFFICIENT_CONTEXT",
+        "total_attempts": 1,
+        "total_repairs": 0
+    }
+]
